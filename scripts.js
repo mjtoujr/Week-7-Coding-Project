@@ -8,14 +8,14 @@ console.log(ages);
 -Do not use numbers to reference the last element, find it programmatically.
 -ages[7] - ages[0] is not allowed!*/
 console.log('\nQuestion 1a - Subtracting first element from last element:\n');
-let lastFirst = (ages[ages.length-1]) - (ages[ages.length - ages.length]); //referencing element positions without using numbers
-console.log(lastFirst);
+let lastFirst = (arr) => (arr[arr.length-1]) - (arr[arr.length - arr.length]); //referencing element positions without using numbers. Setting up as function so that it it will change when ages is changed later.
+console.log(lastFirst(ages));
 /*1b. Add a new age to your array and repeat the step above to ensure it is dynamic. (works for arrays of different lengths).*/
 console.log('\nQuestion 1b - adding age 55 to array:\n');
 ages.push(55);
 console.log('New Array contents:');
 console.log(ages);
-console.log('New subtraction of first element from last element:', lastFirst);
+console.log('New subtraction of first element from last element:', lastFirst(ages));
 /*1c. Use a loop to iterate through the array and calculate the average age.*/
 console.log('\nQuestion 1c - calculating average age:\n');
 function findAverage(arr) {
