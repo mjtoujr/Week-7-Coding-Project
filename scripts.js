@@ -91,11 +91,11 @@ concatenation('Greetings', 6);
 /*Question 8:
 Write a function that takes two parameters, firstName and lastName, and returns a full name. The full name should be the first and the last name separated by a space.*/
 console.log('\nQuestion 8 - Generating full name:\n');
-let fullname = (firstName, lastName) => {
+let fullName = (firstName, lastName) => {
   console.log(firstName + ' ' + lastName);
 };
 console.log('Demonstration full name combination with input of Richard and Finehouse:');
-fullname('Richard', 'Finehouse');
+fullName('Richard', 'Finehouse');
 
 /*Question 9:
 Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.*/
